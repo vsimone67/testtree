@@ -1,0 +1,64 @@
+<div class="container">
+    <p-table [columns]="cols"
+             [value]="cars"
+             dataKey="vin"
+             (onRowExpand)="onRowExpand($event)">
+        <ng-template pTemplate="
+         header"
+                     let-columns>
+            <tr>
+                <th style="width: 3em"></th>
+                <th *ngFor="let col of columns">
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body"
+                     let-rowData
+                     let-expanded="expanded"
+                     let-columns="columns">
+
+            <tr>
+                <td width=50px>
+                    <a href="#"
+                       [pRowToggler]="rowData">
+                        <i [ngClass]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></i>
+                    </a>
+                </td>
+                <td *ngFor="let col of columns">
+                    {{rowData[col.field]}}
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="rowexpansion"
+                     let-rowData
+                     let-columns="columns">
+            <tr>
+                <td [attr.colspan]="5">
+                    <!-- <div class="container"> -->
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        
+                        <div class="col-sm-2">Name</div>
+                        <div class="col-sm-2">Address</div>
+                        <div class="col-sm-2">Telephone</div>
+                        <div class="col-sm-2">Zip</div>
+                    </div>
+
+
+                    <div class="row"
+                         *ngFor="let uw of rowData.Underwriter">
+                        <div class="col-sm-2"></div>
+
+                        <div class="col-sm-2">{{uw.name}}</div>
+                        <div class="col-sm-2">{{uw.address}}</div>
+                        <div class="col-sm-2">{{uw.telephone}}</div>
+                        <div class="col-sm-2">{{uw.zip}}</div>
+
+                    </div>
+                </td>
+            </tr>
+            <!-- </div> -->
+        </ng-template>
+    </p-table>
+</div>
