@@ -1,0 +1,4 @@
+ng add @angular/elements
+ng add ngx-build-plus
+ng build --prod --output-hashing=none --single-bundle
+http-server -p 4200 -c-1 dist/sqp
