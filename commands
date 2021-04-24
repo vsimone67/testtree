@@ -2,3 +2,63 @@ ng add @angular/elements
 ng add ngx-build-plus
 ng build --prod --output-hashing=none --single-bundle
 http-server -p 4200 -c-1 dist/sqp
+
+**********************************
+/* color the menu bar */
+body .ui-menubar {
+  background: transparent;
+  color: white !important;
+  border: none;
+}
+
+/* color menu text */
+body .ui-menubar .ui-menuitem-link .ui-menuitem-text {
+  color: white !important;
+}
+
+/* color the sub menu icon */
+.ui-menubar
+  .ui-menubar-root-list
+  > .ui-menuitem
+  > .ui-menuitem-link
+  > .ui-submenu-icon {
+  color: white;
+}
+
+/* color the sub menu background */
+body .ui-menubar .ui-submenu-list {
+  background: linear-gradient(#00304c, #168b9f);
+}
+
+/* color the sub menu hightlight  */
+  body .ui-menubar .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+    background: linear-gradient(#00304c, #168b9f);
+  }
+
+
+  /* Set menu text */
+body .ui-menubar .ui-menuitem-link .ui-menuitem-text {
+  color: white !important;
+}
+
+/* color for mouse hover over the menu */
+.ui-menubar .ui-menuitem .ui-menuitem-link:hover{
+  background-color: #5393bc;
+}
+
+
+****************************
+
+<nav class="toolbar my-side row mx-0">
+
+  <div class="col-8">
+    <img src="/assets/pictures/background.png"
+         class="img-fluid logo"
+         alt="Responsive image">
+  </div>
+
+  <div class="col-4 center-vertical">
+    <p-menubar [model]="items">
+    </p-menubar>
+  </div>
+</nav>
