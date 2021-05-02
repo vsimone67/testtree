@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+
+.mainheader {
+  height: 7vh;
+  background: linear-gradient(#00304c, #168b9f);
+}
+
+.logo {
+  height: 5vh;
+}
+
+.content-data {
+  overflow: auto;
+  height: 90vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0e6a81;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* center vertically */
+.center-vertical {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* MENU */
+/* color the menu bar */
+body .p-menubar {
+  background: transparent;
+  color: white !important;
+  border: none;
+}
+
+/* color menu text */
+/* body .p-menubar .p-menuitem-link .p-menuitem-text {
+  color: white !important;
+} */
+
+/* color the sub menu icon */
+/* .p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link
+  > .ui-submenu-icon {
+  color: white;
+} */
+
+/* color the sub menu background */
+/* body .p-menubar .ui-submenu-list {
+  background: linear-gradient(#00304c, #168b9f);
+} */
+
+/* color the sub menu hightlight  */
+/* body .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link {
+  background: linear-gradient(#00304c, #168b9f);
+} */
+
+/* Set menu text */
+body .p-menubar .p-menuitem-link .p-menuitem-text {
+  color: white !important;
+}
+
+/* color for mouse hover over the menu */
+body .p-menubar .p-menuitem .p-menuitem-link:hover {
+  background-color: #5393bc;
+}
+
+/* END MENU  */
+
+/*Menu Styling */
+/* .menuItems .p-menubar .p-menuitem-link .p-menuitem-text {
+  color: black !important;
+} */
+
+/* .menuItems .p-menubar {
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  border-bottom: 1px solid #c8c8c8;
+} */
+
+/* body .ui-breadcrumb {
+  border-right: none;
+  height: 40px;
+  border-radius: 0;
+} */
+/*
+.menuItems .p-menubar .p-menubar-root-list {
+  float: right;
+} */
+
+/* .menuItems .p-menubar .p-menuitem .p-menuitem-link:hover span,
+.menuItems .p-menubar .p-menuitem .p-menuitem-link:hover .p-menuitem-text {
+  color: #148398 !important;
+  font-size: 13px;
+  font-weight: bold;
+} */
+
+.footer {
+  height: 2vh;
+}
+.divfooter {
+  background-color: #f4f4f4;
+  border-top: 1px solid #f4f4f4;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100%;
+}
