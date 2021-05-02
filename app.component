@@ -1,0 +1,27 @@
+<div class="mainheader row mx-0">
+
+  <div class="px-5 mt-2 col-2">
+    <img src="/assets/pictures/background.png"
+         class="img-fluid logo"
+         alt="Responsive image">
+  </div>
+
+  <div class="col-10 center-vertical">
+    <main-menu></main-menu>
+  </div>
+</div>
+
+<div class="content-data p-0">
+  <loading></loading>
+  <breadcrumb></breadcrumb>
+  <div id="content"
+       class="content">
+    <!-- Web Components go here -->
+  </div>
+
+</div>
+<footer class="footer">
+  <div class="text-center divfooter">
+    Everest {{version}} © {{date}} ({{environment}})
+  </div>
+</footer>
